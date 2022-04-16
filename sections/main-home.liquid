@@ -6,7 +6,7 @@
 	<img src="{{ block.settings.card_image | image_url: width: 320 }}" />
 {% endfor %}
 
-{% assign fixd_day = section.settings.day %}
+{% capture fixd_day %}{{ section.settings.day }}{% endcapture %}
 {% assign fixd_month = section.settings.month %}
 {% assign fixd_year = section.settings.year %}
 
