@@ -28,7 +28,7 @@
 {% assign count_days = current_days | minus: fxd_days %}
 
 
-{{ count_days | modulo: section.blocks.size }}
+{{ count_days | modulo: section.blocks.size | add: 1 }}
 
 {% schema %}
   {
