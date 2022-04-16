@@ -2,7 +2,9 @@
 
 <h1>Hello World</h1>
 
-{{ "now" | date }}
+{% for block in settings.blocks %}
+	{{ block.card_image | image_url: width: 1080 }}
+{% endfor %}
 
 
 {% schema %}
