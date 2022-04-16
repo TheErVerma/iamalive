@@ -13,7 +13,7 @@
 <h1>{{ fxd_date }} into seconds : {{ fxd_date | date: '%s' }}</h1>
 
 {% assign fxd_sec = fxd_date |date: '%s' %}
-
+{{ fxd_sec | divided_by: 86400 }}
 
 
 
