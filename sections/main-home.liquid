@@ -17,7 +17,7 @@
 
 
 {% assign current_time = 'now' | date: '%s' %}
-{% assign current_days = current_time | divided_by: 3600 | divided_by: 24 %}
+{% assign current_days = current_time | divided_by: 86400 %}
 
 <h5>Current Days : {{ current_days }}</h5>
 
