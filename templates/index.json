@@ -28,9 +28,11 @@
         "62e776e3-385f-46b3-9051-1ef433e5fa23"
       ],
       "settings": {
-        "day": 9,
+        "day": 13,
         "month": 4,
-        "year": 2022
+        "year": 2022,
+        "hours": 13,
+        "minutes": 30
       }
     }
   },
