@@ -28,7 +28,9 @@
         "04a199be-6b7e-4752-8c34-8b9922dcae1b"
       ],
       "settings": {
-        "heading_text_one": ""
+        "day": 16,
+        "month": 4,
+        "year": 2022
       }
     }
   },
