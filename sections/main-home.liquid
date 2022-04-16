@@ -1,7 +1,5 @@
 
 
-<h1>Hello World</h1>
-
 {% for block in section.blocks %}
 	<img src="{{ block.settings.card_image | image_url: width: 320 }}" />
 {% endfor %}
@@ -14,6 +12,7 @@
 
 <h1>{{ fxd_date }} into seconds : {{ fxd_date | date: '%s' }}</h1>
 
+{% assign fxd_sec = fxd_date |date: '%s' %}
 
 <h5>Fixed Day : {{ fixd_day }}</h5>
 <h5>Fixed Month : {{ fixd_month }}</h5>
