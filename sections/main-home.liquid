@@ -3,7 +3,7 @@
 <h1>Hello World</h1>
 
 {% for block in section.blocks %}
-	<img src="{{ block.settings.card_image | image_url: width: 320 }}" />
+<!-- 	<img src="{{ block.settings.card_image | image_url: width: 320 }}" /> -->
 {% endfor %}
 
 {% capture fixd_day %}{{ section.settings.day }}{% endcapture %}
