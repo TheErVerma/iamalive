@@ -14,14 +14,21 @@
           "settings": {
             "card_image": "shopify:\/\/shop_images\/two-aspect-ratio-200-200.jpg"
           }
+        },
+        "62e776e3-385f-46b3-9051-1ef433e5fa23": {
+          "type": "image",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/three-aspect-ratio-200-200.jpg"
+          }
         }
       },
       "block_order": [
         "4c9a6821-2898-4539-9f62-29c598accbee",
-        "c68e3dbc-5aad-4dee-beb8-8f40fc7c7df0"
+        "c68e3dbc-5aad-4dee-beb8-8f40fc7c7df0",
+        "62e776e3-385f-46b3-9051-1ef433e5fa23"
       ],
       "settings": {
-        "day": 14,
+        "day": 9,
         "month": 4,
         "year": 2022
       }
