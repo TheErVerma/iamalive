@@ -25,7 +25,7 @@
 
 
 <h3>Number of days : {{ current_days | minus: fxd_days}}</h3>
-
+{% assign count_days = current_days | minus: fxd_days %}
 
 
 {{ 3 | modulo: section.blocks.size }}
