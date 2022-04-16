@@ -1,9 +1,3 @@
-
-
-{% for block in section.blocks %}
-	<img src="{{ block.settings.card_image | image_url: width: 320 }}" />
-{% endfor %}
-
 {% assign fixd_day = section.settings.day %}
 {% assign fixd_month = section.settings.month %}
 {% assign fixd_year = section.settings.year %}
@@ -29,6 +23,15 @@
 
 
 {{ count_days | modulo: section.blocks.size | plus: 1 }}
+{% assign display_index = count_days | modulo: section.blocks.size | plus: 1%}
+
+
+{% for block in section.blocks %}
+	{% if forloop.index == display_index %}
+	<img src="{{ block.settings.card_image | image_url: width: 320 }}" />
+	{% endif %}
+{% endfor %}
+
 
 {% schema %}
   {
