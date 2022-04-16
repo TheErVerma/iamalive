@@ -1,7 +1,124 @@
+{% assign fixd_day = section.settings.day %}
+{% assign fixd_month = section.settings.month %}
+{% assign fixd_year = section.settings.year %}
+
+{% assign fixd_hours = section.settings.hours %}
+{% assign fixd_minutes = section.settings.minutes %}
+
+{% capture fxd_date %}{{ fixd_year }}-{{ fixd_month }}-{{ fixd_day }} {{ fixd_hours }}:{{ fixd_minutes }}:00{% endcapture %}
+
+<h1>{{ fxd_date }} into seconds : {{ fxd_date | date: '%s' }}</h1>
+
+{% assign fxd_sec = fxd_date |date: '%s' %}
+{% assign fxd_days = fxd_sec | divided_by: 86400 %}
+<h5>Fixed Days : {{ fxd_sec | divided_by: 86400 }}</h5>
+
+
+
+{% assign current_time = 'now' | date: '%s' %}
+{% assign current_days = current_time | divided_by: 86400 %}
+
+<h5>Current Days : {{ current_days }}</h5>
+
+
+<h3>Number of days : {{ current_days | minus: fxd_days}}</h3>
+{% assign count_days = current_days | minus: fxd_days %}
+
+
+{{ count_days | modulo: section.blocks.size | plus: 1 }}
+{% assign display_index = count_days | modulo: section.blocks.size | plus: 1%}
+<h1>Display Index : {{ display_index }}</h1>
+
+{% for block in section.blocks %}
+	{% if forloop.index == display_index %}
+	<img src="{{ block.settings.card_image | image_url: width: 320 }}" />
+	{% endif %}
+{% endfor %}
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Home",
+	"max_blocks": 4,
+    "settings": [
+		{
+			"type":"header",
+			"content": "Fixed Date"
+		},
+		{
+			"type": "range",
+			"label": "Day",
+			"max": 31,
+			"min": 1,
+			"id" : "day",
+			"step" : 1,
+			
+			"default": 1
+		},
+		{
+			"type": "range",
+			"label": "Month",
+			"max": 12,
+			"min": 1,
+			"id" : "month",
+			"step" : 1,
+			
+			"default": 1
+		},
+		{
+			"type": "range",
+			"label": "Year",
+			"max": 2022,
+			"min": 2000,
+			"step" : 1,
+			"id" : "year",
+			
+			"default": 2000
+		},
+		{
+			"type": "header",
+			"content": "Fixed Time"
+		},
+		{
+			"type": "range",
+			"label": "Hours",
+			"max": 23,
+			"min": 0,
+			"step" : 1,
+			"id" : "hours",
+			
+			"default": 0
+		},
+		{
+			"type": "range",
+			"label": "Minutes",
+			"max": 59,
+			"min": 0,
+			"step" : 1,
+			"id" : "minutes",
+			
+			"default": 0
+		}
+	],
+	"blocks": [
+      {
+        "name": "Image",
+        "type": "image",
+        "settings" : [
+          {
+            "id": "card_image",
+            "type": "image_picker",
+            "label": "Image"
+          }
+        ]
+      }
+	],
+	"presets":[
+		{
+          "name":"Custom Time Images",
+          "category": "custom"
+		}
+	]
   }
 {% endschema %}
 
