@@ -27,8 +27,9 @@
 <h3>Number of days : {{ current_days | minus: fxd_days}}</h3>
 
 
-{{ 3 | modulo: 2 }}
 
+{{ 3 | modulo: 2 }}
+{{ section.blocks.size }}
 
 {% schema %}
   {
