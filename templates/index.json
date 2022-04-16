@@ -2,41 +2,47 @@
   "sections": {
     "main-home": {
       "type": "main-home",
+      "settings": {
+      }
+    },
+    "16500964477ee7c27d": {
+      "type": "custom-time-images",
       "blocks": {
-        "4c9a6821-2898-4539-9f62-29c598accbee": {
+        "6fff9a76-6b68-48e4-baf8-319d53feeefc": {
           "type": "image",
           "settings": {
             "card_image": "shopify:\/\/shop_images\/one-aspect-ratio-200-200.jpg"
           }
         },
-        "c68e3dbc-5aad-4dee-beb8-8f40fc7c7df0": {
-          "type": "image",
-          "settings": {
-            "card_image": "shopify:\/\/shop_images\/two-aspect-ratio-200-200.jpg"
-          }
-        },
-        "62e776e3-385f-46b3-9051-1ef433e5fa23": {
+        "6c5dd0bb-2627-4b1b-bd41-8083ab2de612": {
           "type": "image",
           "settings": {
             "card_image": "shopify:\/\/shop_images\/three-aspect-ratio-200-200.jpg"
           }
+        },
+        "374b76f7-cd43-4125-94d7-82a875ed55f1": {
+          "type": "image",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/two-aspect-ratio-200-200.jpg"
+          }
         }
       },
       "block_order": [
-        "4c9a6821-2898-4539-9f62-29c598accbee",
-        "c68e3dbc-5aad-4dee-beb8-8f40fc7c7df0",
-        "62e776e3-385f-46b3-9051-1ef433e5fa23"
+        "6fff9a76-6b68-48e4-baf8-319d53feeefc",
+        "6c5dd0bb-2627-4b1b-bd41-8083ab2de612",
+        "374b76f7-cd43-4125-94d7-82a875ed55f1"
       ],
       "settings": {
-        "day": 13,
-        "month": 4,
-        "year": 2022,
-        "hours": 13,
-        "minutes": 30
+        "day": 1,
+        "month": 1,
+        "year": 2000,
+        "hours": 0,
+        "minutes": 0
       }
     }
   },
   "order": [
-    "main-home"
+    "main-home",
+    "16500964477ee7c27d"
   ]
 }
