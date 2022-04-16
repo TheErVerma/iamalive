@@ -12,7 +12,7 @@
 
 {% capture fxd_date %}{{ fixd_day }}-{{ fixd_month }}-{{ fixd_year }}{% endcapture %}
 
-{{ fxd_date | date: '%s' }}
+<h1>{{ fxd_date }} into seconds : {{ fxd_date | date: '%s' }}</h1>
 
 
 <h5>Fixed Day : {{ fixd_day }}</h5>
