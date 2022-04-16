@@ -24,7 +24,7 @@
 
 {{ count_days | modulo: section.blocks.size | plus: 1 }}
 {% assign display_index = count_days | modulo: section.blocks.size | plus: 1%}
-
+<h1>Display Index : {{ display_index }}</h1>
 
 {% for block in section.blocks %}
 	{% if forloop.index == display_index %}
