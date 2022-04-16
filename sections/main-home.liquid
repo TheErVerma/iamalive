@@ -14,7 +14,6 @@
 
 {% assign fxd_sec = fxd_date |date: '%s' %}
 {{ fxd_sec | divided_by: 86400 }}
-{{ "now" | date}}
 
 
 
@@ -23,23 +22,6 @@
 
 <h5>Current Days : {{ current_days }}</h5>
 
-{% assign fixd_seconds = fixd_day | times: 86400 | times: fixd_month | times: fixed_year %}
-
-<h5>Fixed days : {{ fixd_day | times: section.settings.month }}</h5>
-
-
-{% comment %} convert our dates to Number of seconds 
-              since 1970-01-01 00:00:00 UTC {% endcomment %}
-{% assign dateStart = product.created_at | date: '%s' %}
-{% assign nowTimestamp = 'now' | date: '%s' %}
-
-{% comment %} difference in seconds {% endcomment %}
-{% assign diffSeconds = nowTimestamp | minus: dateStart %}
-
-{% comment %} difference in days {% endcomment %}
-{% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 %}
-
-<p>difference in days = {{ diffDays }}</p>
 
 {% schema %}
   {
