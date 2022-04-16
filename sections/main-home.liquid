@@ -2,7 +2,10 @@
 {% assign fixd_month = section.settings.month %}
 {% assign fixd_year = section.settings.year %}
 
-{% capture fxd_date %}{{ fixd_year }}-{{ fixd_month }}-{{ fixd_day }} 13:09:00{% endcapture %}
+{% assign fixd_hours = section.settings.hours %}
+{% assign fixd_minutes = section.settings.minutes %}
+
+{% capture fxd_date %}{{ fixd_year }}-{{ fixd_month }}-{{ fixd_day }} {{ fixd_hours }}:{{ fixd_minutes }}:00{% endcapture %}
 
 <h1>{{ fxd_date }} into seconds : {{ fxd_date | date: '%s' }}</h1>
 
