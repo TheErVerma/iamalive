@@ -13,6 +13,12 @@
 
 
 
+{% assign current_time = 'now' | date: '%s' %}
+{% assign current_days = current_time | divided_by: 3600 | divided_by: 24 %}
+
+{% assign fixd_seconds = fixd_day | times: 86400 | times: fixd_month | times: fixed_year %}
+
+{{ fixd_seconds }}
 
 
 {% comment %} convert our dates to Number of seconds 
