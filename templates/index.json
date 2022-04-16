@@ -2,31 +2,6 @@
   "sections": {
     "main-home": {
       "type": "main-home",
-      "blocks": {
-        "56a5d2e2-44c7-47df-88f5-5ae62cad649b": {
-          "type": "image",
-          "settings": {
-            "card_image": "shopify:\/\/shop_images\/two-aspect-ratio-200-200.jpg"
-          }
-        },
-        "eed80ce8-1284-49b8-b81d-318bcbf60d44": {
-          "type": "image",
-          "settings": {
-            "card_image": "shopify:\/\/shop_images\/one-aspect-ratio-200-200.jpg"
-          }
-        },
-        "04a199be-6b7e-4752-8c34-8b9922dcae1b": {
-          "type": "image",
-          "settings": {
-            "card_image": "shopify:\/\/shop_images\/three-aspect-ratio-200-200.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "56a5d2e2-44c7-47df-88f5-5ae62cad649b",
-        "eed80ce8-1284-49b8-b81d-318bcbf60d44",
-        "04a199be-6b7e-4752-8c34-8b9922dcae1b"
-      ],
       "settings": {
         "day": 16,
         "month": 4,
