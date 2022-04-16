@@ -2,13 +2,33 @@
 
 <h1>Hello World</h1>
 
-{{ "now" | date}}
+{{ "now" | date }}
 
 
 {% schema %}
   {
     "name": "Home",
-    "settings": []
+	"max_blocks": 4,
+    "settings": [
+		{
+			"type": "text",
+			"label": "Heading text",
+			"id" : "heading_text_one"
+		}
+	],
+	"blocks": [
+      {
+        "name": "Text",
+        "type": "text",
+        "settings" : [
+          {
+            "id": "heading_text",
+            "type": "text",
+            "label": "Heading Text"
+          }
+        ]
+      }
+	]
   }
 {% endschema %}
 
