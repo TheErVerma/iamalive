@@ -3,7 +3,7 @@
 <h1>Hello World</h1>
 
 {% for block in settings.blocks %}
-	{{ block.card_image | image_url: width: 1080 }}
+	<img src="{{ block.card_image | image_url: width: 320 }}" />
 {% endfor %}
 
 
