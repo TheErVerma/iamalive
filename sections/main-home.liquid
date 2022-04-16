@@ -9,7 +9,10 @@
 {% assign fixd_day = section.settings.day %}
 {% assign fixd_month = section.settings.month %}
 {% assign fixd_year = section.settings.year %}
-{{ "-1970-01-01" | date: '%s' }}
+
+{% capture fxd_date %}{{ fixd_day }}-{{ fixd_month }}-{{ fixd_year }}{% endcapture %}
+
+{{ fxd_date | date: '%s' }}
 
 
 <h5>Fixed Day : {{ fixd_day }}</h5>
