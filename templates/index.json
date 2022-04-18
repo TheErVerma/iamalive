@@ -25,12 +25,26 @@
           "settings": {
             "card_image": "shopify:\/\/shop_images\/two-aspect-ratio-200-200.jpg"
           }
+        },
+        "705a3a02-4dae-492e-8095-6f9cfe6081e0": {
+          "type": "image",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/fashionable-man-by-textured-wall.jpg"
+          }
+        },
+        "9921ec45-67ac-41d5-aecb-bf3000de34ac": {
+          "type": "image",
+          "settings": {
+            "card_image": "shopify:\/\/shop_images\/silver-lamp-on-a-white-table-next-to-books.jpg"
+          }
         }
       },
       "block_order": [
         "6fff9a76-6b68-48e4-baf8-319d53feeefc",
         "6c5dd0bb-2627-4b1b-bd41-8083ab2de612",
-        "374b76f7-cd43-4125-94d7-82a875ed55f1"
+        "374b76f7-cd43-4125-94d7-82a875ed55f1",
+        "705a3a02-4dae-492e-8095-6f9cfe6081e0",
+        "9921ec45-67ac-41d5-aecb-bf3000de34ac"
       ],
       "settings": {
         "day": 16,
