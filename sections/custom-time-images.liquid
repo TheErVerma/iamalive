@@ -25,7 +25,6 @@
 {% assign count_days = current_days | minus: fxd_days %}
 
 
-{{ count_days | modulo: section.blocks.size | plus: 1 }}
 {% assign display_index = count_days | modulo: section.blocks.size | plus: 1%}
 <h1>Display Index : {{ display_index }}</h1>
 
